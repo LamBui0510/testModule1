@@ -14,19 +14,20 @@ Nguyên âm là các ký tự: a, o, e, u, i
 
 </body>
 <script>
-    function countString(str){
+    function countString(str) {
         let count = 0;
         for (let i = 0; i < str.length; i++) {
-            if ( str[i] === "u" || str[i] === "e" || str[i] === "o" || str[i] === "a" || str[i] === "i"){
+            if (str[i] === "u" || str[i] === "e" || str[i] === "o" || str[i] === "a" || str[i] === "i") {
                 count++;
             }
         }
-        if ( count !== 0 ){
+        if (count !== 0) {
             return count;
-        }else {
+        } else {
             return false;
         }
     }
+
     let str = prompt("Nhập chuỗi: ");
     document.write(countString(str));
 </script>
